@@ -5,9 +5,9 @@
 extern "C" {
 
 	// Funktion die zwei ganzen Zahlen addiert
-	__declspec(dllimport) int addiereZahlen(int zahl1, int zahl2);
+	__declspec(dllexport) int addiereZahlen(int zahl1, int zahl2);
 
-	class __declspec(dllimport) Punkt
+	class __declspec(dllexport) Punkt
 	{
 	public:
 		// Attribute

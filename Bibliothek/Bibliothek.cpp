@@ -21,7 +21,7 @@ Punkt::Punkt()
 }
 
 
-Punkt::~Punkt(){}
+Punkt::~Punkt() {}
 
 
 void Punkt::punktwerteAnzeigen()
