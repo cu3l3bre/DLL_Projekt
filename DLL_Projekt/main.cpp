@@ -24,7 +24,7 @@ int main()
 	p2->y = 50;
 	delete p2;
 
-	cout << addiereZahlen(2, 3) << endl;
+	cout << addiereZahlen(10, 5) << endl;
 
 	system("pause");
 	return 0;

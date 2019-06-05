@@ -1,13 +1,21 @@
 #pragma once
 
 
+#ifdef BIBLIOTHEK_EXPORTS
+#define BIBLIOTHEK_API __declspec(dllexport)
+#else
+#define BIBLIOTHEK_API __declspec(dllimport)
+#endif
+
+
 // verhindert Nameskonfikte
-extern "C" {
+extern "C"
+{
 
 	// Funktion die zwei ganzen Zahlen addiert
-	__declspec(dllimport) int addiereZahlen(int zahl1, int zahl2);
+	BIBLIOTHEK_API int addiereZahlen(int zahl1, int zahl2);
 
-	class __declspec(dllimport) Punkt
+	class BIBLIOTHEK_API Punkt
 	{
 	public:
 		// Attribute
